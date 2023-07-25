@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Refund Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="data">
+        <table>
+            <tr>
+                <th colspan="6">Tax Refund Document</th>
+            </tr>
+            <tr>
+                <th>#</th>
+                <th>Date</th>
+                <th>Number</th>
+                <th>Retrieved From</th>
+                <th>Type</th>
+                <th>Amount</th>
+            </tr>
+            <script>
+                for (let i=1; i<=20;i++){
+                    document.write(`
+                    <tr>
+                        <td class="place">${i}</td>
+                        <td class="date"><input type="date" class="date"></td>
+                        <td class="no"><input type="number" class="no"></td>
+                        <td class="who"><input type="text"></td>
+                        <td class="type"><select name="type" id="selectname${i}" class="type" ><option value="">Choose...</option><option value="health" >Health</option><option value="food" >Food</option><option value="clothing">Clothing</option><option value="rent">Rent</option></select></td>
+                        <td  class="price"><input id="price${i}" type="number"></td>
+                    </tr>
+                    `)
+                }
+            </script>
+            
+            <tr class="data-toplam">
+                <td colspan="5" class="toplam">TOTAL</td> <td class="toplam"><input type="text" id="pricetotal" readonly></td>
+            </tr>
+
+        </table>
+        <button onclick="calc();">Save</button>
+    </div>
+    <hr>
+    <div class="total">
+        <table class="table-total">
+            <tr>
+                <th class="none"></th><th>Quantity</th><th>Sum</th>
+            </tr>
+            <tr>
+                <td class="b-dash">General Total</td><td class="countertable"><input class="countertable" type="text" id="countertotal" readonly></td><td class="pricestable"><input type="text" id="pricetotal2" class="pricestable" readonly></td>
+            </tr>
+            <tr>
+                <td class="b-dash">Health</td><td class="countertable"><input class="countertable" type="text" id="counterhealth" readonly></td><td class="pricestable"><input type="text" id="totalhealth" class="pricestable" readonly></td>
+            </tr>
+            <tr>
+                <td class="b-dash">Food</td><td class="countertable"><input class="countertable" type="text" id="counterfood" readonly></td><td class="pricestable"><input type="text" id="totalfood" class="pricestable" readonly></td>
+            </tr>
+            <tr>
+                <td class="b-dash">Clothing</td><td class="countertable"><input class="countertable" type="text" id="counterclothing" readonly></td><td class="pricestable"><input type="text" id="totalclothing" class="pricestable" readonly></td>
+            </tr>
+            <tr>
+                <td class="b-dash">Rent</td><td class="countertable"><input class="countertable" type="text" id="counterrent" readonly></td><td class="pricestable"><input type="text" id="totalrent" class="pricestable" readonly></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

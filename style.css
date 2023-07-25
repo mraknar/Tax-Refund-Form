@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+table{
+    width: 850px;
+}
+
+th{
+    border: dashed 1px;
+    height: 25px;
+}
+
+td{
+    border: solid 1px;
+    height: 25px;
+    text-align: center;
+    padding: 0px 5px;
+}
+
+input{
+    height: 25px;
+}
+
+input,select{
+    border: none;
+}
+
+.type{
+    width: 100px;
+    text-align: center;
+}
+
+.date{
+    text-align: center;
+}
+
+.place{
+    width: 500px;
+    border: dashed 1px;
+    font-weight: bold;
+}
+
+
+.toplam{
+    text-align: right;
+    padding-right: 5px;
+}
+
+.toplam{
+    border: dashed 1px;
+    font-weight: bold;
+}
+
+hr {
+    background-color: black;
+    color: black;
+    height:3px; /* Height of the divider */
+    width: 800px;
+    margin: 20px 0;
+}
+
+.table-total{
+    width: 360px;
+}
+.none{
+    border: none;
+    width: 130px;
+}
+
+.b-dash{
+    border: dashed 1px;
+    text-align: right;
+    padding-right: 10px;
+    font-weight: bold;
+}
+
+.countertable{
+    width: 70px;
+}
+
+.pricestable{
+    width: 140px;
+}
+
+
+
+button{
+    height: 35px;
+    width: 100px;
+    font-size: medium;
+    font-weight: bold;
+    background-color: #666666;
+    color: cornsilk;
+    border: none;
+    border-radius: 50px;
+    margin-top: 15px;
+    position: relative;
+    margin-left: 400px;
+}
+
+button:hover{
+    background-color: #535353;
+    cursor: pointer;
+}
+
+
+
